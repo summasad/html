@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 전역속성 : 어떤 태그에도 사용 가능한 속성
+        1) class : 현재 페이지에서 중복 값 가능
+        2) id : 중복 불가(중복시 오류를 내지는 않음)
+        3) name : 요소에 이름 부여(중복 가능)
+        4) style : 태그에 직접 디자인을 부여
+        5) data-* : data-아무거나 (ex data-animal-type)
+                    대문자 사용안됨
+                    자바 스크립트나 서버에서 필요한 데이터 담기 위한 기능                    
+    -->
+    <div class="section" id="section1">
+      <a href="" class="section" id="section2">연결</a>
+    </div>
+    <div style="width: 100px; height: 100px; background-color: red"></div>
+    <ul>
+      <li data-animal-type="bird">Owl</li>
+      <li data-animal-type="fish">Salmon</li>
+      <li data-animal-type="spider">Tarantula</li>
+    </ul>
+  </body>
+</html>

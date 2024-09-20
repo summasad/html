@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 
+        value : default 값 지정으로 활용
+        readonly : 읽기전용
+        disabled : input field 를 사용못하고 클릭 안됨 / submit 시 정보 안감
+        size : default 20, 글자창 조정
+        maxlength : 입력 글자수 제한
+        min, max : 특정범위로 입력제한, number, range, date, datetime-Local, month, time 사용
+        step : 증감값 지정
+        multiple : select, file 에 사용, 여러개 선택 가능
+        pattern : tel, text, date, search, url, tel, email, password 사용 가능
+                  특정 패턴(정규식)으로 입력 제한
+        placeholder : 힌트 제공. 텍스트 입력 상자에 입력할 내용 설명
+        required : 필수 입력 요소에 사용
+        autofocus : 페이지 로드 시 특정 입력창 활성화
+     -->
+    <form action="" method="get"></form>
+    <div>
+      <label for="fname">First Name : </label>
+      <input type="text" name="fname" id="fname" value="John" disabled />
+    </div>
+    <div>
+      <label for="lname">Last Name : </label>
+      <input
+        type="text"
+        name="lname"
+        id="lname"
+        size="30"
+        placeholder="이름입력"
+        required
+        autofocus
+      />
+    </div>
+    <div>
+      <label for="pin">PIN : </label>
+      <input type="text" name="pin" id="pin" size="4" maxlength="4" />
+    </div>
+    <div>
+      <label for="date">date : </label>
+      <input type="date" name="date" id="date" min="sysdate" max="2024-12-31" />
+    </div>
+    <div>
+      <label for="quantity">quantity : </label>
+      <input
+        type="number"
+        name="quantity"
+        id="quantity"
+        min="1"
+        max="10"
+        step="2"
+        required
+      />
+    </div>
+    <div>
+      <button type="submit">전송</button>
+    </div>
+  </body>
+</html>
