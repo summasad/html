@@ -1,0 +1,20 @@
+* {
+  box-sizing: border-box;
+}
+input {
+  padding: 10px;
+  width: 100%;
+  border: 1px solid #555;
+}
+
+/* input 포커스 가 들어오면 배경색  */
+input:focus {
+  background-color: cadetblue;
+  outline: none;
+}
+
+div {
+  /* 바깥여백 */
+  /* 네방향 */
+  margin-bottom: 50px;
+}

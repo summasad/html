@@ -19,7 +19,7 @@
         color: white;
         background-color: blue;
       }
-      [id^="top"] {
+      /* [id^="top"] {
         background-color: yellow;
       }
       [class$="test"] {
@@ -27,7 +27,28 @@
       }
       [class*="te"] {
         background-color: orange;
+      } */
+      [class~="test"] {
+        opacity: 0.3;
+        color: blue;
       }
+      [class|="top"] {
+        background-color: yellow;
+      }
+      /* btn-로 시작 : padding-10px, 글자 굵게, border-radius : 20px */
+      [class|="btn"] {
+        padding: 10px;
+        font-weight: bold;
+        border-radius: 20px;
+      }
+      [class$="success"] {
+        color: green;
+      }
+      [class$="danger"] {
+        color: red;
+      }
+      /* success 로 끝나는 : 글자색 green */
+      /* danger 로 끝나는 : 글자색 red */
     </style>
   </head>
   <body>
@@ -43,12 +64,17 @@
       [속성명|=값] : 값 다음에 - 이 오는 형태 
       [속성명*=값] : 특정값을 포함하고 있는(일부 일치) 
     -->
+    <div>
+      <input type="text" class="fruit_name test" id="" />
+      <input type="text" class="fruit_color test" id="" />
+      <input type="tel" name="" id="" />
+    </div>
     <div class="first_test">First Test</div>
     <div class="my_test">Div My Test</div>
     <p class="mytest">My Test</p>
     <div>
-      <h1 id="top_title">CSS 기본 문법</h1>
-      <h2 id="topcontent">선택자 - 8. 속성 선택자</h2>
+      <h1 id="top-title" class="top-header">CSS 기본 문법</h1>
+      <h2 id="topcontent" class="topcontent">선택자 - 8. 속성 선택자</h2>
     </div>
 
     <ul>
@@ -57,5 +83,9 @@
       <li><a href="#" target="_self">naver</a></li>
     </ul>
     <a href="mailto:master@google.com">마스터에게 메일 보내기</a>
+    <div>
+      <button class="btn-success">Success</button>
+      <button class="btn-danger">Danger</button>
+    </div>
   </body>
 </html>
