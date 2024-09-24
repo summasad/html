@@ -1,0 +1,33 @@
+/* 전체 요소 margin padding 0 => 0인 경우 단위 사용 안함 */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* portfolio width : 960px,  margin : 상하 100px, 좌우 auto, 배경색 : black,  블릿 제거 */
+
+.portfolio2 {
+  border-collapse: collapse;
+  /* 테이블 너비 : 고정크기, 상대크기 */
+  width: 960px;
+  margin: 100px, auto;
+  background: black;
+  list-style: none;
+  overflow: hidden;
+}
+
+/* 다음 요소 없을 때 */
+
+/* li width, height 225px 지정, 배경색 임의 지정, 오른쪽 여백 20px */
+.portfolio2 td {
+  width: 225px;
+  height: 225px;
+  background-color: cornsilk;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  float: left;
+}
+/* li 네번째 margin-right 0 설정 */
+tr td:nth-child(4) {
+  margin-right: 0;
+}

@@ -1,0 +1,39 @@
+body {
+  padding-top: 100px;
+}
+
+/* container 너비 500 높이 300, 가운데 정렬, 배경색 yellow*/
+.container {
+  width: 500px;
+  height: 300px;
+  margin: 0 auto;
+  background-color: yellow;
+  position: relative;
+  /* 부모영역 */
+}
+
+/* 자식 요소 너비 100 높이 100 색상 임의 */
+.box {
+  /* width: 100px; */
+  height: 100px;
+  position: absolute;
+  /* 배치 */
+  white-space: nowrap;
+}
+
+.a {
+  background-color: darkcyan;
+  right: 100%;
+  top: 100px;
+}
+
+.b {
+  background-color: darkblue;
+  right: 200px;
+  top: 100px;
+}
+.c {
+  background-color: darkred;
+  left: 100%;
+  bottom: 100px;
+}

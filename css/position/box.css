@@ -1,0 +1,13 @@
+/* width : 100%, height : 0 => 값 지정 가능 */
+* {
+  box-sizing: border-box;
+  /* content-box가 default
+    border-box = content+padding+border */
+}
+.child {
+  width: 100px;
+  height: 100px;
+  background-color: chocolate;
+  padding: 10px;
+  border: 2px solid slateblue;
+}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./inline.css" />
+  </head>
+  <body>
+    <!--
+        자식 요소를 한줄로 배치
+        1) display: inline-block;
+         -하단에 자동 공백 제거(글자꼬리 공백) : vertical-align: top;
+         -우측에 자동 공백 제거(텍스트 뒤에 엔터) : font-size: 0;
+        2) float : left or right
+        3) flex
+     -->
+    <div class="grid clearfix">
+      <div class="grid-item a"></div>
+      <div class="grid-item b"></div>
+      <div class="grid-item c"></div>
+    </div>
+  </body>
+</html>

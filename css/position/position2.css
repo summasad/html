@@ -1,0 +1,32 @@
+/* slide : border, width 800m height 300, 가운데 정렬, 안쪽 여백10 */
+
+.slide {
+  border: 2px solid green;
+  width: 800px;
+  height: 300px;
+  margin: 0 auto;
+  padding: 10px;
+  position: relative;
+}
+.slide img {
+  float: left;
+}
+
+.controls a {
+  display: block;
+  background-color: black;
+  color: white;
+  text-align: center;
+  line-height: 50px;
+  position: absolute;
+  white-space: nowrap;
+  top: calc(50%-25px);
+}
+
+.prev {
+  right: 100%;
+}
+
+.new {
+  left: 100%;
+}

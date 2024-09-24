@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* overflow : 요소의 크기 이상으로 내용(자식요소)이 넘쳤을 때 처리 
+        1) visible(default) : 넘친 부분 그대로 보여줌
+        2) auto : 넘친 부분이 있는 경우 잘라내고 세로 스크롤바를 이용해서 볼 수 있도록 함
+        3) hidden : 넘친 부분 잘라내고 가려줌
+        4) scroll : 넘친 부분이 있는 경우 잘라내고 가로, 세로 스크롤바를 이용해서 볼 수 있도록 함
+        */
+      .overflow {
+        /* block => width : auto(100%), height : 0 */
+        height: 100px;
+        background-color: silver;
+        border: 1px solid red;
+        overflow: scroll;
+      }
+    </style>
+  </head>
+  <body>
+    <p class="overflow">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima porro
+      sint nulla unde asperiores aut, nesciunt, suscipit earum ex obcaecati
+      consequuntur rerum sequi animi accusantium repellat nisi quo ipsum
+      dolorum! Dolore tempora minus consequuntur nostrum tenetur porro officia
+      repellendus! Magni vitae est sint molestias nulla quae sunt, recusandae
+      ab? Ipsa repudiandae, fuga asperiores eaque praesentium quo sint quae!
+      Quas quo id magnam magni. Dolorem deleniti quia modi, dicta blanditiis
+      iusto voluptas velit dolores est, nemo excepturi quaerat, earum ullam
+      dolorum? Iusto sed iste id doloribus numquam molestias minima facilis
+      accusamus, ipsa temporibus, odio eos vero eligendi, tempore ipsam quos
+      deleniti! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima
+      porro sint nulla unde asperiores aut, nesciunt, suscipit earum ex
+      obcaecati consequuntur rerum sequi animi accusantium repellat nisi quo
+      ipsum dolorum! Dolore tempora minus consequuntur nostrum tenetur porro
+      officia repellendus! Magni vitae est sint molestias nulla quae sunt,
+      recusandae ab? Ipsa repudiandae, fuga asperiores eaque praesentium quo
+      sint quae! Quas quo id magnam magni. Dolorem deleniti quia modi, dicta
+      blanditiis iusto voluptas velit dolores est, nemo excepturi quaerat, earum
+      ullam dolorum? Iusto sed iste id doloribus numquam molestias minima
+      facilis accusamus, ipsa temporibus, odio eos vero eligendi, tempore ipsam
+      quos deleniti!
+    </p>
+  </body>
+</html>

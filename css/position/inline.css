@@ -1,0 +1,46 @@
+body {
+  background-color: #222;
+}
+
+.grid {
+  width: 500px;
+  margin: 0 auto;
+  background-color: white;
+
+  /* float 정렬시 */
+  /* overflow: hidden; */
+
+  /* inline-block 정렬시 */
+  /* font-size: 0;
+  text-align: right; */
+  /* 순서대로 우측정렬 */
+}
+
+.grid-item {
+  width: 100px;
+  height: 100px;
+  float: right;
+
+  /* inline-block 정렬시 */
+  /* display: inline-block;
+  vertical-align: top; */
+}
+
+.a {
+  background-color: orange;
+  float: left;
+}
+
+.b {
+  background-color: orangered;
+}
+
+.c {
+  background-color: red;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
