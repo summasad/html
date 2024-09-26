@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+}
+
+/* float */
+/* menu {
+  width: 25%;
+  float: left;
+}
+main {
+  width: 75%;
+  float: left;
+}
+body::after {
+  content: "";
+  display: block;
+  clear: both;
+} */
+
+/* flex */
+/* 부모설정 */
+section {
+  display: flex;
+}
+
+section menu {
+  width: 25%;
+}
+
+section main {
+  width: 75%;
+}
